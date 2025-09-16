@@ -5,15 +5,22 @@ function renderBootstrapData(response){
     if(!response || !response.result) return;
     BOOTSTRAP_DATA = response;
     // Render categories
-    if(response.categories && response.categories.length>0){
-        $('#categories .row > div.target').empty();
-        $(response.categories).each(function(i,j){
-            var output = '<div class="col-md-4 btn pos-btn btn-default select-category" data-category-id="'+j.id+'">';
-            output += '<div class="image"><img src="'+ base_url + "uploads/product_categories/" + j.photo + '" alt=""></div>';
-            output += '<div class="label">'+j.name+'</div>'
-            output += '</div>'
-            $('#categories .row > div.target').append(output);
-        })
+    // When Vue is present, let it render categories/products
+    if(window.Vue){
+        try{
+            window.dispatchEvent(new CustomEvent('orders:bootstrap',{detail:response}));
+        }catch(e){}
+    }else{
+        if(response.categories && response.categories.length>0){
+            $('#categories .row > div.target').empty();
+            $(response.categories).each(function(i,j){
+                var output = '<div class="col-md-4 btn pos-btn btn-default select-category" data-category-id="'+j.id+'">';
+                output += '<div class="image"><img src="'+ base_url + "uploads/product_categories/" + j.photo + '" alt=""></div>';
+                output += '<div class="label">'+j.name+'</div>'
+                output += '</div>'
+                $('#categories .row > div.target').append(output);
+            })
+        }
     }
     // Build products by category index
     PRODUCTS_BY_CATEGORY_ID = {};
@@ -215,9 +222,10 @@ jQuery(function(){
         $('#assignTable2').modal("hide");
     })
 
-    $('#categories').on("click",".select-category", function(){
-        let categoryId = $(this).data("category-id");
-        let categoryName = $(this).find(".label").text();
+    // Vue interop: if Vue dispatches events, hook them here
+    window.addEventListener('orders:categorySelected', function(e){
+        let categoryId = e.detail.id;
+        let categoryName = e.detail.name;
         Notify('one-beep');
         myloader("on")
         // Client-side render from BOOTSTRAP_DATA
@@ -263,6 +271,13 @@ jQuery(function(){
             toastr["info"]("Sorry ! There are no items in "+categoryName)
         }
         myloader("off")
+    })
+
+    // Back action from Vue
+    window.addEventListener('orders:backToCategories', function(){
+        $('#products .row > div.target').empty();
+        unhide(['#categories']);
+        hide(['#addons-block','#products']);
     })
 
     $('#products').on("click",".select-product",function(){
@@ -313,6 +328,33 @@ jQuery(function(){
         $('#items-cart').append(html);
         calculateTotals();
     })
+
+    // Vue -> jQuery product selection bridge
+    window.addEventListener('orders:productSelected', function(e){
+        const d = e.detail;
+        const $div = $('<div class="select-product"></div>');
+        $div.attr('data-product-id', d.el.dataset.productId);
+        $div.attr('data-product-price', d.el.dataset.productPrice);
+        $div.attr('data-product-vat', d.el.dataset.productVat);
+        $div.attr('data-product-name', d.el.dataset.productName);
+        $div.attr('data-category', d.el.dataset.category);
+        $('#products').append($div);
+        $div.trigger('click');
+        $div.remove();
+    });
+
+    window.addEventListener('orders:addonSelected', function(e){
+        const d = e.detail;
+        const $div = $('<div class="select-addon"></div>');
+        $div.attr('data-product-id', d.el.dataset.productId);
+        $div.attr('data-product-price', d.el.dataset.productPrice);
+        $div.attr('data-product-vat', d.el.dataset.productVat);
+        $div.attr('data-product-name', d.el.dataset.productName);
+        $div.attr('data-category', d.el.dataset.category);
+        $('#addons-block').append($div);
+        $div.trigger('click');
+        $div.remove();
+    });
 
     $('.backToCategories').on("click",function(){
         $('#products .row > div.target').empty();

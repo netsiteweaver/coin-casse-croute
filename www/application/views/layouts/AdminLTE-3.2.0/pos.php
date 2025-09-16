@@ -140,6 +140,12 @@
 <script src="<?php echo base_url('assets/js/main.min.js')."?".date("YmdHis"); ?>"></script>
 <!-- <script src="<?php echo base_url('assets/js/messages.min.js')."?".date("YmdHis"); ?>"></script> -->
 
+<?php if(($controller === 'orders') && ($method === 'add')): ?>
+<!-- Vue.js (only for Orders Add page) -->
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+<script src="<?php echo base_url('assets/js/pages/orders_add_vue.js')."?".date("YmdHis"); ?>"></script>
+<?php endif; ?>
+
 <!-- AUTO LOADER FOR JS -->
 <!-- Looks for a js whose name matches the controller + method and loads it if found -->
 <!-- 2019-04-08: Looks for a minified version first -->
