@@ -1,13 +1,12 @@
-<div class="row">
-  <div class="col-md-5">
-    <div class="row">
-      <div class="col-md-2 selected-table"></div>
-      <div class="col-md-10 float-right">
-        <div class="btn btn-sm bg-red clearAllTables float-right"><i class="fas fa-broom"></i> Clear All</div>
-        <div class="btn btn-sm bg-purple openAssignModal float-right"><i class="fa fa-undo"></i> Replace / Merge</div>
-        <div class="btn btn-sm bg-yellow openTableModal float-right"><i class="far fa-hand-point-up"></i> Select Table</div>
-      </div>
-    </div>
+<div class="row pos-toolbar align-items-center">
+  <div class="col-md-8">
+    <span class="selected-table">Table: 0</span>
+    <div class="btn btn-sm bg-yellow openTableModal"><i class="far fa-hand-point-up"></i> Select Table</div>
+    <div class="btn btn-sm bg-purple openAssignModal"><i class="fa fa-undo"></i> Replace / Merge</div>
+    <div class="btn btn-sm bg-red clearAllTables"><i class="fas fa-broom"></i> Clear All</div>
+  </div>
+  <div class="col-md-4 text-right">
+    <div class="btn btn-success btn-lg nocalc-btn save"><i class="fa fa-save"></i> Save</div>
   </div>
 </div>
 
@@ -23,7 +22,7 @@
         </div>
         <div id="items-cart"></div>
     </div>
-    <div class="col-md-2 vertical-separator">
+    <div class="col-md-2 vertical-separator pos-keypad">
         <div class="row">
             <div class="col-md-3 btn btn-default calc-btn" style='background-color:#fbf8cc;'>7</div>
             <div class="col-md-3 btn btn-default calc-btn" style='background-color:#fde4cf;'>8</div>
