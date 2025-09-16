@@ -1,11 +1,13 @@
 <div class="row">
-  <div class="col-md-5">
-    <div class="row">
-      <div class="col-md-2 selected-table"></div>
-      <div class="col-md-10 float-right">
-        <div class="btn btn-sm bg-red clearAllTables float-right"><i class="fas fa-broom"></i> Clear All</div>
-        <div class="btn btn-sm bg-purple openAssignModal float-right"><i class="fa fa-undo"></i> Replace / Merge</div>
-        <div class="btn btn-sm bg-yellow openTableModal float-right"><i class="far fa-hand-point-up"></i> Select Table</div>
+  <div class="col-md-12">
+    <div class="pos-card pos-toolbar">
+      <div class="row">
+        <div class="col-md-2 selected-table"></div>
+        <div class="col-md-10 float-right toolbar-actions">
+          <div class="btn btn-sm bg-red clearAllTables float-right"><i class="fas fa-broom"></i> Clear All</div>
+          <div class="btn btn-sm bg-purple openAssignModal float-right"><i class="fa fa-undo"></i> Replace / Merge</div>
+          <div class="btn btn-sm bg-yellow openTableModal float-right"><i class="far fa-hand-point-up"></i> Select Table</div>
+        </div>
       </div>
     </div>
   </div>
@@ -13,6 +15,8 @@
 
 <div class="row">
     <div class="col-md-4 vertical-separator tbl">
+        <div class="pos-card">
+        <div class="pos-card-title">Order</div>
         <div class="row text-bold cart-header">
             <div class="col-sm-5 text-left">ITEM</div>
             <div class="col-sm-1 text-center">QTY</div>
@@ -22,28 +26,32 @@
             <div class="col-md-1 text-left"><i class="fa fa-2x fa-times deleteAll"></i></div>
         </div>
         <div id="items-cart"></div>
+        </div>
     </div>
-    <div class="col-md-2 vertical-separator">
+    <div class="col-md-3 vertical-separator">
+        <div class="pos-card keypad-card">
         <div class="row">
-            <div class="col-md-3 btn btn-default calc-btn" style='background-color:#fbf8cc;'>7</div>
-            <div class="col-md-3 btn btn-default calc-btn" style='background-color:#fde4cf;'>8</div>
-            <div class="col-md-3 btn btn-default calc-btn" style='background-color:#ffcfd2;'>9</div>
+            <div class="col-md-4 btn btn-default calc-btn" style='background-color:#fbf8cc;'>7</div>
+            <div class="col-md-4 btn btn-default calc-btn" style='background-color:#fde4cf;'>8</div>
+            <div class="col-md-4 btn btn-default calc-btn" style='background-color:#ffcfd2;'>9</div>
         </div>
         <div class="row">
-            <div class="col-md-3 btn btn-default calc-btn" style='background-color:#f1c0e8;'>4</div>
-            <div class="col-md-3 btn btn-default calc-btn" style='background-color:#cfbaf0;'>5</div>
-            <div class="col-md-3 btn btn-default calc-btn" style='background-color:#a3c4f3;'>6</div>
+            <div class="col-md-4 btn btn-default calc-btn" style='background-color:#f1c0e8;'>4</div>
+            <div class="col-md-4 btn btn-default calc-btn" style='background-color:#cfbaf0;'>5</div>
+            <div class="col-md-4 btn btn-default calc-btn" style='background-color:#a3c4f3;'>6</div>
         </div>
         <div class="row">
-            <div class="col-md-3 btn btn-default calc-btn" style='background-color:#90dbf4;'>1</div>
-            <div class="col-md-3 btn btn-default calc-btn" style='background-color:#8eecf5;'>2</div>
-            <div class="col-md-3 btn btn-default calc-btn" style='background-color:#98f5e1;'>3</div>
+            <div class="col-md-4 btn btn-default calc-btn" style='background-color:#90dbf4;'>1</div>
+            <div class="col-md-4 btn btn-default calc-btn" style='background-color:#8eecf5;'>2</div>
+            <div class="col-md-4 btn btn-default calc-btn" style='background-color:#98f5e1;'>3</div>
         </div>
         <div class="row">
-            <div class="col-md-3 btn btn-default calc-btn" style='background-color:#b9fbc0;'>0</div>
-            <div class="col-md-6 btn btn-success nocalc-btn save">Save</div>
+            <div class="col-md-4 btn btn-default calc-btn" style='background-color:#b9fbc0;'>0</div>
+            <div class="col-md-8 btn btn-success nocalc-btn save">Save</div>
+        </div>
         </div>
 
+        <div class="pos-card customer-card">
         <div class="row">
             <div class="col-md-12">
                 <label for="popup_customer">Customer:</label>
@@ -59,15 +67,19 @@
                 <input type="text" id="popup_payment_mode" class="form-control cursor-pointer" value="CASH" data-toggle="modal" data-target="#paymentModeModal" readonly>
             </div>
         </div>
+        </div>
         
     </div>
-    <div class="col-md-6" id="categories">
+    <div class="col-md-5" id="categories">
+        <div class="pos-card">
         <div class="row" style="position:relative;">
             <div class="col-sm-12"><h3>Select Category</h3></div>
             <div class="target"></div>
         </div>
+        </div>
     </div>
-    <div class="col-md-6 d-none" id="products">
+    <div class="col-md-5 d-none" id="products">
+        <div class="pos-card">
         <div class="row">
             <div class="col-sm-12">
                 <h3><span class='category-name'></span>
@@ -75,6 +87,7 @@
                 </h3>
             </div>
             <div class="target"></div>
+        </div>
         </div>
     </div>
     <div id="addons-block" class="d-none">
