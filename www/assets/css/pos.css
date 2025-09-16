@@ -6,6 +6,7 @@
     width: 100px;
     height: 100px;
     display: inline-table;
+    position: relative;
 }
 
 .pos-btn img {
@@ -22,6 +23,7 @@
     height: 70px;
     display: inline-table;
     margin-right: 2px;
+    position: relative;
 }
 
 .addon-btn img {
@@ -261,4 +263,33 @@
 	font-size: 48px;
 	font-family: "Digital-7 Mono";
     text-align: right;
+}
+
+/* Visual separators for orders/add layout columns */
+.vertical-separator {
+    border-right: 1px solid #afbec0;
+}
+
+/* POS Cards */
+.pos-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.pos-card-title {
+    font-weight: bold;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+}
+.pos-toolbar .toolbar-actions .btn {
+    margin-left: 6px;
+}
+.keypad-card .btn {
+    margin-bottom: 6px;
+}
+.customer-card label {
+    font-weight: bold;
 }
