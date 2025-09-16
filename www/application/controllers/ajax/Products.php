@@ -40,4 +40,56 @@ class Products extends CI_Controller
         echo json_encode(array("result"=>true,"categories"=>$result,"rows"=>count($result)));
         exit;
     }
+
+    public function bootstrap()
+    {
+        // Load all active categories
+        $categories = $this->db->select("*")
+                                ->from("product_categories pc")
+                                ->where("pc.status","1")
+                                ->order_by("pc.display_order, pc.name","asc")
+                                ->get()
+                                ->result();
+
+        // Load all active products with category name
+        $products = $this->db->select("p.*, pc.name as categoryName")
+                             ->from("products p")
+                             ->join("product_categories pc","pc.id=p.category_id","left")
+                             ->where(array("p.status"=>"1"))
+                             ->order_by("p.display_order","asc")
+                             ->get()
+                             ->result();
+
+        // Load all addons grouped by product_category_id
+        $addonsRows = $this->db->select('ac.product_category_id, ad.*, pc.name as categoryName')
+                               ->from("addons_categories ac")
+                               ->join("product_categories pc","pc.id=ac.product_category_id")
+                               ->join("products ad","ad.id=ac.addon_id","left")
+                               ->where("ad.status","1")
+                               ->order_by("ad.display_order","asc")
+                               ->get()
+                               ->result();
+
+        $addonsByCategoryId = array();
+        if(!empty($addonsRows)){
+            foreach($addonsRows as $row){
+                $catId = $row->product_category_id;
+                if(!isset($addonsByCategoryId[$catId])){
+                    $addonsByCategoryId[$catId] = array();
+                }
+                $addonsByCategoryId[$catId][] = $row;
+            }
+        }
+
+        $response = array(
+            "result" => true,
+            "dataVersion" => date('c'),
+            "categories" => $categories,
+            "products" => $products,
+            "addonsByCategoryId" => $addonsByCategoryId
+        );
+
+        echo json_encode($response);
+        exit;
+    }
 }
