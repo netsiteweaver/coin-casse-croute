@@ -262,3 +262,51 @@
 	font-family: "Digital-7 Mono";
     text-align: right;
 }
+
+/* POS Toolbar */
+.pos-toolbar {
+	position: sticky;
+	top: 0;
+	z-index: 1030;
+	background: #f8f9fa;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 8px 10px;
+	margin-bottom: 8px;
+}
+.pos-toolbar .btn {
+	margin-left: 6px;
+}
+.selected-table {
+	display: inline-block;
+	background: #ffffff;
+	border: 1px solid #dee2e6;
+	border-radius: 6px;
+	padding: 6px 10px;
+	font-weight: 700;
+	min-width: 110px;
+}
+
+/* Columns separators */
+.vertical-separator {
+	border-right: 1px solid #e9ecef;
+}
+
+/* Keypad refinements */
+.pos-keypad .calc-btn,
+.pos-keypad .nocalc-btn {
+	height: 70px;
+	font-size: 22px;
+}
+.pos-keypad .nocalc-btn.save {
+	width: 100%;
+}
+
+/* Cart panel sizing */
+#items-cart {
+	max-height: calc(100vh - 320px);
+}
+.cart-header {
+	background: #f3f6f8;
+	border-top: 1px solid #e9ecef;
+	border-bottom: 1px solid #e9ecef;
+}
