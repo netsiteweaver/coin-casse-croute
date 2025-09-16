@@ -1,0 +1,48 @@
+addons
+	create
+	update
+	delete
+customers
+	create
+	update
+	delete
+orders
+	add
+	delete
+payment modes
+	create
+	update
+	delete
+products
+	create
+	update
+	delete
+product categories
+	create
+	update
+	delete
+users
+	create
+	update
+	permissions
+	forgot password
+	activate / de-activate
+	delete
+reports
+	orders
+	products
+	customers
+	
+	
+url
+login
+-wrong cerdentials
+
+dashboard
+
+new order
+	select category > item > [addon] > save
+	
+	
+	
+

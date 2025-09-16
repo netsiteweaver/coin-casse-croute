@@ -1,0 +1,264 @@
+.pos-btn {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    width: 100px;
+    height: 100px;
+    display: inline-table;
+}
+
+.pos-btn img {
+    height: 98px;
+    width: 98px;
+}
+
+.addon-btn {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    width: 70px;
+    height: 70px;
+    display: inline-table;
+    margin-right: 2px;
+}
+
+.addon-btn img {
+    height: 70px;
+    width: 70px;
+}
+
+
+#addons-block {
+	border: 1px solid #ccc;
+	width: 496px;
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	/* height: 90px; */
+	background-color: #fef;
+	padding: 2px;
+    transition: width 0.5s;
+}
+
+#addons-block #hideshow {
+    position: absolute;
+    top: 0;
+    right:0;
+    color: #4c4c4c;
+    cursor: pointer;
+    /* float: right; */
+    /* height: auto; */
+}
+
+#addons-block.hide {
+    width: 45px;
+    height: 35px;
+}
+
+
+#addons-block p {
+    font-size: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+#addons-block .label {
+    bottom: 1px;
+    top:unset;
+    border-bottom: unset;
+    border-top: 1px solid #ccc;
+    font-size:10px;
+    text-transform: unset;
+}
+
+.select-category {
+    margin: 1px;
+}
+
+.calc-btn, .nocalc-btn {
+    height: 60px;
+    padding-top: 15px;
+    font-size: 18px;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    border-radius: 10px;
+}
+
+.calc-btn.inactive, .nocalc-btn.inactive {
+    opacity: 0.5;
+}
+
+#products .image,
+#categories .image {
+    overflow: hidden;
+}
+
+#products {
+    padding-bottom:100px;
+}
+
+#categories .label, #products .label, #addons-block .label {
+	font-family: "Arial";
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	font-size: 12px;
+	padding: 3px;
+	background-color: #a3c4f3;
+	width: calc(100% - 2px);
+	border-bottom: 1px solid #ccc;
+	opacity: 0.7;
+    overflow: hidden;
+    height: 25px;
+    text-align: left;
+    text-transform: uppercase;
+}
+#products .price {
+	font-family: "Arial";
+	position: absolute;
+	bottom: 2px;
+	right: 10px;
+	font-size: 14px;
+    letter-spacing: 1px;
+	padding: 3px;
+	width: calc(100% - 2px);
+	opacity: 0.7;
+	overflow: hidden;
+	height: 25px;
+    text-align: right;
+    font-weight: bold;
+}
+#addons-block .price {
+	font-family: "Arial";
+	position: absolute;
+	bottom: 7px;
+	right: 13px;
+	font-size: 12px;
+	padding: 2px 4px;
+	width: 100%;
+	opacity: 0.9;
+	overflow: hidden;
+	/* height: 25px; */
+	text-align: right;
+	/* font-weight: bold; */
+	background-color: #fff;
+	color: #000;
+	left: 0;
+	/* border: 1px solid red; */
+}
+#selectTable2 .selected-table > div{
+    border: 2px double #4e3575;
+    background-color: #cfbaf0;;
+}
+
+.calc.selected {
+    background-color: #c9ebf1;
+}
+
+#items-cart {
+    line-height: 25px;
+    overflow-y: scroll;
+}
+
+#items-cart .row div {
+    border-bottom: 1px solid #eee;
+}
+
+.fa-times {
+    color: #9a031e;
+    font-size: 16px;
+}
+.fa-times.fa-2x {
+    font-size: 24px;
+}
+
+.resolution {
+    position: fixed;
+    right: 125px;
+    bottom: 15px;
+    border: 1px solid #eee;
+    padding: 2px 4px;
+    opacity: 0.8;
+}
+
+.resolution.alert {
+    background-color: red;
+    color: #ffffff;
+}
+
+.cart-header,
+#items-cart {
+    font-size: 14px;
+}
+.resto-table{
+    margin-bottom: 10px;
+}
+.resto-table div.ctn {
+	float: right;
+	font-size: 0.6em;
+	background-color: black;
+	color: white;
+	padding: 3px 5px 0px 5px;
+	position: absolute;
+	top: 5px;
+	right: 15px;
+}
+
+#selectTable, #assignTable {
+    position: absolute;
+    padding:10px;
+    top:200px;
+    /* width: 500px; */
+    left:33vw;
+    border: 1px solid #4c4c4c;
+    border-radius: 10px;
+    background-color: #ffe;
+    color:#000;
+    z-index: 10000;
+}
+
+#assignTable {
+    background-color: #fef;
+}
+
+#selectTable .close, #assignTable .close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size:.8em;
+}
+#table-overlay {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    z-index:9999;
+    background-color: #000;
+    opacity:0.75;
+}
+
+.tbl .cart-header div, .tbl #items-cart div{
+    border-bottom: 1px solid #afbec0;
+}
+
+.totals {
+    margin-top:25px;
+}
+
+#products .category-name{
+    text-transform: uppercase;
+}
+#turret_display {
+	border: 2px solid #070202;
+	background-color: #a7bbaa;
+	color:#070202;
+	font-size: 48px;
+	font-family: "Digital-7 Mono";
+    text-align: right;
+}

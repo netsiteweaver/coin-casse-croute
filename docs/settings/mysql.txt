@@ -1,0 +1,4 @@
+MySQL
+username: stagingserver_cassecroute
+password: &$_Zk-An{uQZ
+database: stagingserver_cassecroute

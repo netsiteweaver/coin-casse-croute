@@ -1,0 +1,6 @@
+Username:casse-croute@staging-server.xyz
+Password:J*Ue4HF.a3RG
+Incoming Server:mail.staging-server.xyz
+IMAP Port: 993 POP3 Port: 995 
+Outgoing Server:mail.staging-server.xyz
+SMTP Port: 465 

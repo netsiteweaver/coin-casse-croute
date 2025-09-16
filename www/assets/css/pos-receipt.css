@@ -1,0 +1,132 @@
+
+#invoice {
+    border:1px solid #ccc;
+    padding: 10mm;
+    margin: 0 auto;
+    width: 80mm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#invoice table {
+    width: 100%;
+}
+
+#invoice table thead {
+    text-align: center;
+}
+
+#invoice table td {
+    border-bottom:1px dotted #ccc;
+    line-height: 20px;
+}
+#invoice table.receipt-info td {
+    border-bottom: none;
+}
+#invoice table tbody td:nth-child(2){
+    text-align: center;
+}
+#invoice table tbody td:nth-child(3){
+    text-align: right;
+}
+#invoice table thead td img{
+    width: 80mm;
+    border:1px solid #000;
+}
+
+#invoice table td.center {
+    border-bottom:1px dotted #ccc;
+}
+
+#invoice .company-info {
+    text-transform: uppercase;
+}
+
+#invoice .title {
+    font-size: 1.4em;
+}
+.totals {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+img {
+    max-width: 80mm;
+}
+
+.left {text-align: left;}
+.center {text-align: center;}
+.right {text-align: right;}
+
+.invoice table td img {
+    width: 90%;
+    margin-left:5%;
+    border:2px solid #000;
+}
+
+.btn {
+    text-decoration:none; 
+    font-family:Arial; 
+    padding:5px 10px; 
+    border:1px solid #ccc;
+}
+
+.receipt-info {
+    border-top:1px double #000;
+    padding-top:10px;
+    margin-top:25px;
+}
+
+#buttons {
+    /* padding: 10mm; */
+    /* width: 80mm; */
+    margin-top: 25px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#buttons a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding:15px 10px;
+    border: 1px solid #000;
+    width: 40%;
+    text-align: center;
+    background-color: aquamarine;
+}
+#buttons a:first-child {
+    float:right;
+    background-color: burlywood;
+}
+@media print{
+    .btn, .buttons, #buttons {
+        display: none;
+    }
+}
+/* .social tr td {
+}
+.social img {
+	width: 24px;
+	height: 24px;
+}
+.social tr td:nth-child(2) {
+	width: 6cm;
+} */
+
+#invoice table.social {
+    border-top:1px double #000;
+    padding-top:10px;
+    margin-top:25px;
+    width: 100%;
+}
+#invoice table.social>tbody>tr>td:nth-child(1), #invoice table.social>tbody>tr>td:nth-child(3) {
+    width: 50px;
+}
+#invoice table.social>tbody>tr>td:nth-child(2), #invoice table.social>tbody>tr>td:nth-child(4) {
+    text-align: left;
+}
+#invoice table.social>tbody>tr>td>img {
+    width: 24px;
+	height: 24px;
+}

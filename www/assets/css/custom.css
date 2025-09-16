@@ -1,0 +1,53 @@
+/* COLORS BLUE */
+/* COLORS PURPLE */
+/* YELLOW */
+/* RED */
+p.notes {
+  font-size: 12px; }
+
+a {
+  color: #1b4f72; }
+
+.project_name {
+  font-size: 0.8em;
+  color: orange; }
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 180px; } }
+.sidebar ul#side-menu li {
+  line-height: 0.9; }
+  .sidebar ul#side-menu li :hover {
+    background-color: #ebf5fb;
+    color: #1b4f72; }
+  .sidebar ul#side-menu li .active {
+    color: #ebf5fb;
+    background-color: #1b4f72; }
+
+#wrapper .navbar-default {
+  color: #1b4f72;
+  background-color: #ebf5fb; }
+@media (min-width: 768px) {
+  #wrapper #page-wrapper {
+    margin: 0 0 0 180px; } }
+
+.well {
+  background-color: #ebf5fb; }
+
+.panel .huge {
+  font-size: 16px; }
+
+@media (max-width: 768px) {
+  .panel .huge {
+    font-size: 12px; } }
+.panel .panel-footer {
+  padding: 5px 15px; }
+
+.inactive {
+  background-color: #cccccc;
+  color: #666666; }
+
+.table.extended-bottom-margin {
+  margin-bottom: 120px; }
+
+/*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,9 @@
+application/config/development/config.php
+application/config/development/database.php
+
+application/logs
+release/
+node_modules/signature_pad
+*.zip
+
+uploads

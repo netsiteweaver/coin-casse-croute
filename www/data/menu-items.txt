@@ -1,0 +1,146 @@
+Entrée
+Soupe de maïs au poulet Rs 115
+Salade verte rs 170
+Salade ourite rs 400
+Sauté calamar rs 430
+Salade konokono rs rs 460
+Sauté fruit de mers rs 550
+Salade zero rs 460
+Snacks
+Croquette poulet rs 200
+Croquette crevette rs 260
+Croustillant poulet rs 200
+Croustillant crevette rs 260
+Croustillant calmar rs 375
+Beignet oignon rs 150
+Hakien poulet rs 175
+Hakien legumes rs 175
+Mine bouillie
+Veg rs 110
+Veg + crispy rs 140
+Poulet rs 140
+Bœuf rs 140
+Salmi agneau rs 200
+Daube ourite rs 210
+Salmi palourde rs 210
+Salmi mangouak rs 210
+Fruit de mers rs 280
+mine frit
+Veg rs 125
+Veg + crispy rs 155
+Poulet rs 165
+Poulet spécial rs 195
+Bœuf rs 185
+Bœuf special rs 210
+Agneau rs 230
+Agneau spécial rs 260
+Fruit de mers rs 280
+Riz frit
+Veg rs 125
+Veg + crispy rs 155
+Poulet rs 165
+Poulet spécial rs 195
+Bœuf rs 185
+Bœuf spécial rs 210
+Agneau rs 230
+Agneau spécial rs 260
+Fruit de mers rs 280
+Bol renversé
+Veg rs 125
+Veg + crispy rs 155
+Poulet rs 165
+Poulet spécial rs 195
+Bœuf rs 185
+Bœuf spécial rs 210
+Agneau rs 230
+Agneau spécial rs 260
+Fruit de mers rs 280
+Mine renversé
+Veg rs 125
+Veg + crispy rs 155
+Poulet rs 165
+Poulet spécial rs 195
+Bœuf rs 185
+Bœuf spécial rs 210
+Agneau rs 230
+Agneau spécial rs 260
+Fruit de mers rs 280
+Meefoon frit
+Veg rs 125
+Veg + crispy rs 155
+Poulet rs 165
+Poulet spécial rs 195
+Bœuf rs 185
+Bœuf spécial rs 210
+Agneau rs 230
+Agneau spécial rs 260
+Fruit de mers rs 280
+Bouillion meefoon
+Veg rs 125
+Veg + crispy rs 155
+Poulet rs 165
+Poulet spécial rs 195
+Bœuf rs 185
+Bœuf spécial rs 210
+Agneau rs 230
+Agneau spécial rs 260
+Fruit de mers rs 280
+Curry
+Poulet rs 315
+Bœuf rs 345
+Poisson rs 460
+Agneau rs 460
+Ourite rs 460
+Daube
+Poulet rs 315
+Bœuf rs 345
+Poisson rs 460
+Agneau rs 460
+Ourite rs 460
+Sauté uniquement
+Poulet rs 290
+Bœuf rs 315
+Agneau rs 460
+Fruit de mers rs 545
+Sauté avec accompagnement frites et salade
+Poulet rs 375
+Bœuf rs 400
+Agneau rs 515
+Fruit de mers rs 630
+Sauce au beurre de basilic
+Crevette rs 400
+Calamar rs 460
+Assiette typique
+Salmi mangouak rs 500
+Salmi palourde rs 500
+Salmi bigorno rs 500
+Salmi tektek rs 500
+Nos boissons
+Eau 0.5 rs 40
+Eau 1L rs 70
+Chopine coca rs 55
+Chopine sprite rs 55
+Chopine perona rs 60
+Coca 0.5 rs 80
+Sprite 0.5 rs 80
+Chopine de bière rs 115
+Bière pression rs 145
+Bière Heineken rs 145
+Bière Golden Ale Awanam rs 145
+Canette Sanpellegrino rs 70
+Nos cocktails maison
+Jus de fruits rs 150
+Mojito virgin rs 145
+Mojito alcohol rs 200
+Ti punch rs 170
+Sex on the beach rs 200
+Add on
+Portion poulet rs 60
+Portion boeuf rs 60
+Brède rs 30
+Légumes rs 30
+Portion ourite rs 125
+Portion palourde rs 125
+Portion mangouak rs 125
+Portion tektek rs 125
+Portion bigorno rs 125
