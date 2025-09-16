@@ -6,6 +6,7 @@
     width: 100px;
     height: 100px;
     display: inline-table;
+    position: relative;
 }
 
 .pos-btn img {
@@ -22,6 +23,7 @@
     height: 70px;
     display: inline-table;
     margin-right: 2px;
+    position: relative;
 }
 
 .addon-btn img {
@@ -261,4 +263,9 @@
 	font-size: 48px;
 	font-family: "Digital-7 Mono";
     text-align: right;
+}
+
+/* Visual separators for orders/add layout columns */
+.vertical-separator {
+    border-right: 1px solid #afbec0;
 }
