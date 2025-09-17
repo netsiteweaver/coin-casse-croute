@@ -63,7 +63,7 @@
     <div class="col-md-6" id="categories">
         <div class="row" style="position:relative;">
             <div class="col-sm-12"><h3>Select Category</h3></div>
-            <div class="target"></div>
+            <div class="target d-flex flex-wrap"></div>
         </div>
     </div>
     <div class="col-md-6 d-none" id="products">
@@ -73,12 +73,12 @@
                     <div class='backToCategories cursor-pointer float-right'><i class="fa fa-chevron-left"></i> Back</div>
                 </h3>
             </div>
-            <div class="target"></div>
+            <div class="target d-flex flex-wrap"></div>
         </div>
-    </div>
-    <div id="addons-block" class="d-none">
-        <div class="content"></div>
-        <div id="hideshow"><i class="fa fa-2x fa-chevron-left d-none"></i><i class="fa fa-2x fa-chevron-right"></i></div>
+        <div id="addons-block" class="d-none">
+            <div class="content d-flex flex-wrap"></div>
+            <div id="hideshow"><i class="fa fa-2x fa-chevron-left d-none"></i><i class="fa fa-2x fa-chevron-right"></i></div>
+        </div>
     </div>
 </div>
 
