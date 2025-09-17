@@ -129,12 +129,12 @@
         app.mount(categoriesRoot);
     }
 
-    // Mount products section (re-uses existing container)
-    const productsRoot = document.querySelector('#products');
-    if(productsRoot){
-        const app2 = createApp(Products);
-        app2.mount(productsRoot);
-    }
+    // Mount products section is disabled to avoid duplicate rendering and layout conflicts
+    // const productsRoot = document.querySelector('#products');
+    // if(productsRoot){
+    //     const app2 = createApp(Products);
+    //     app2.mount(productsRoot);
+    // }
 
 })();
 
